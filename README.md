@@ -1,106 +1,86 @@
-# Quartz ReFi Template
+# ReFi Mediterranean Website
 
-A modular template repository for creating Quartz-based websites for ReFi local nodes. Fork this template to quickly set up your local node website with optional features like multi-language support, analytics, comments, and more.
+Website and knowledge base for ReFi Mediterranean - A coordination of ReFi nodes serving the Mediterranean bioregion.
+
+**Website:** [refidao.github.io/ReFi-Mediterranean](https://refidao.github.io/ReFi-Mediterranean)
+
+## About
+
+ReFi Mediterranean connects regenerative finance initiatives across the Mediterranean region, supporting projects that leverage Web3 for real-world impact and address local needs.
 
 ## Features
 
-- **Modular Package System**: Choose only the features you need
-- **Easy Customization**: Theme colors, fonts, and layout easily customizable
-- **Upstream Sync**: Stay updated with template improvements
-- **Best Practices**: Built-in best practices for Quartz configuration
-- **Cursor Rules**: Pre-configured cursor rules for easier development
+- **Mediterranean Ocean Theme** - Custom theme inspired by the Mediterranean Sea
+- **Bioregional Focus** - Supporting regenerative initiatives across Mediterranean countries
+- **Community Coordination** - Connecting local initiatives with global ReFi networks
+- **Knowledge Base** - Documentation and resources for the Mediterranean ReFi community
 
-## Quick Start
+## Development
 
-### 1. Use This Template
+### Prerequisites
 
-Click **"Use this template"** button on GitHub to create your repository.
+- Node.js v22+ (see `.node-version` for the specific version)
+- npm v10.9.2+
 
-### 2. Run Setup Script
+### Setup
 
-```bash
-npm install
-npm run setup
-```
-
-The setup script will:
-- Prompt for site information (name, URL, etc.)
-- Let you select optional packages
-- Configure files automatically
-
-### 3. Set Up Cursor Rules (Optional)
-
-```bash
-npm run setup:cursor
-```
-
-This generates site-specific cursor rules for easier development.
-
-### 4. Install Dependencies
-
+1. Install dependencies:
 ```bash
 npm install
 ```
 
-### 5. Build and Preview
-
+2. Start the development server:
 ```bash
 npx quartz build --serve
 ```
 
-Visit `http://localhost:8080` to see your site.
+The site will be available at `http://localhost:8080`
 
-### 6. Deploy
+### Build for Production
 
-Push to `main` branch and GitHub Actions will deploy automatically.
+```bash
+npx quartz build
+```
 
-## Available Packages
+## Project Structure
 
-### Core (Always Included)
-Essential Quartz framework and base configuration.
+```
+ReFi-Mediterranean/
+├── content/                    # Markdown content files
+│   ├── index.md               # Homepage
+│   ├── about/                 # About ReFi Mediterranean
+│   ├── initiatives/           # Regional initiatives
+│   ├── resources/             # Resources and documentation
+│   └── community/             # Community information
+├── quartz/                    # Quartz framework files
+├── quartz.config.ts          # Quartz configuration
+└── package.json              # Dependencies
+```
 
-### Theme (Always Included)
-Customizable theme architecture with CSS variables.
+## Deployment
 
-### Optional Packages
+The site is automatically deployed via GitHub Actions when changes are pushed to the `main` branch.
 
-- **Multilang**: Multi-language support with LanguageSwitcher component
-- **Analytics**: Plausible Analytics integration
-- **Comments**: Giscus comments system (GitHub Discussions)
-- **OG Images**: Custom Open Graph image generation
-
-See [docs/PACKAGES.md](docs/PACKAGES.md) for detailed package documentation.
-
-## Documentation
-
-- [Setup Guide](docs/SETUP.md) - Detailed setup instructions
-- [Package Documentation](docs/PACKAGES.md) - Complete package catalog
-- [Upstream Sync Guide](docs/UPSTREAM-SYNC.md) - How to sync from template
-- [Contributing Guide](docs/CONTRIBUTING.md) - How to contribute back
+- **GitHub Pages:** https://refidao.github.io/ReFi-Mediterranean
+- **Repository:** https://github.com/ReFiDAO/ReFi-Mediterranean
 
 ## Customization
 
 ### Theme Colors
 
-Edit CSS variables in `quartz/styles/custom.scss`:
+The site uses a Mediterranean Ocean theme with colors defined in `quartz/styles/custom.scss`:
 
-```scss
-:root {
-  --primary-dark: #092045;
-  --primary-medium: #1A3A6B;
-  --primary-light: #2E5491;
-}
-```
+- **Primary Dark:** `#0D4A6B` - Deep Mediterranean blue
+- **Primary Medium:** `#1E7A9F` - Mediterranean blue
+- **Primary Light:** `#4AB3D9` - Light aqua
+- **Secondary:** `#D4A574` - Warm gold
+- **Tertiary:** `#6B8E23` - Olive green
 
-### Content
-
-Edit markdown files in `content/` directory.
-
-### Configuration
-
-Edit `quartz.config.ts` and `quartz.layout.ts` for site-specific settings.
+See [CUSTOMIZATIONS.md](CUSTOMIZATIONS.md) for detailed customization information.
 
 ## Upstream Sync
+
+This repository is based on the [quartz-refi-template](https://github.com/ReFiDAO/quartz-refi-template).
 
 To sync improvements from the template:
 
@@ -115,36 +95,18 @@ See [docs/UPSTREAM-SYNC.md](docs/UPSTREAM-SYNC.md) for detailed instructions.
 
 ## Contributing
 
-Found a bug or have an improvement? Contribute back to the template!
-
-1. Fork the template repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
-
-## Requirements
-
-- Node.js v22+
-- npm v10.9.2+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing to this project.
 
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
-## Support
+## Contact
 
-- **Template Repository**: https://github.com/ReFiDAO/quartz-refi-template
-- **Issues**: https://github.com/ReFiDAO/quartz-refi-template/issues
-- **Discussions**: https://github.com/ReFiDAO/quartz-refi-template/discussions
-
-## Related Projects
-
-- [Quartz](https://quartz.jzhao.xyz/) - The static site generator
-- [ReFi DAO](https://refidao.com) - Global ReFi network
+For questions or contributions, contact us through:
+- **GitHub:** https://github.com/ReFiDAO/ReFi-Mediterranean
+- **ReFi DAO:** https://refidao.com
 
 ---
 
-Built with 💚 by the ReFi community
-
+Built with 💚 by the ReFi Mediterranean community

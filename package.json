@@ -1,13 +1,13 @@
 {
-  "name": "quartz-refi-template",
-  "description": "Modular Quartz template for ReFi local node websites",
+  "name": "refi-mediterranean-website",
+  "description": "Website and knowledge base for ReFi Mediterranean - A coordination of ReFi nodes serving the Mediterranean bioregion",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ReFiDAO/quartz-refi-template.git"
+    "url": "https://github.com/ReFiDAO/ReFi-Mediterranean.git"
   },
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
