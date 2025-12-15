@@ -73,28 +73,6 @@ The round allocated **$10,000 USDGLO** in matching funds to projects creating ec
 
 </div>
 
-<div class="section-container section-container-tinted">
-  <div class="section-content-centered">
-    <h2>Our Team</h2>
-    <p>
-      ReFi Mediterranean is stewarded by a team of regenerative finance practitioners and Web3 public goods contributors.
-    </p>
-  </div>
-
-  <div class="team-grid">
-    <div class="team-member">
-      <p class="team-name"><a href="https://x.com/regenavocado">Regen Avocado</a></p>
-      <p class="team-role">Round Operator; Steward</p>
-      <p class="team-bio">Founder Rifai Sicilia, member ReFi Italia, steward ReFi Mediterranean, contributor to Community Success at Karma. Leads bioregional grantmaking experiments for regenerative impact.</p>
-    </div>
-    <div class="team-member">
-      <p class="team-name"><a href="https://x.com/louizfe">Luiz Fernando</a></p>
-      <p class="team-role">Round Operator; Ops Lead</p>
-      <p class="team-bio">Founder & lead of ReFi Barcelona; core steward & operations lead at ReFi DAO. Supports coordination, operations, and scaling local nodes and funding mechanisms.</p>
-    </div>
-  </div>
-</div>
-
 <div id="get-involved" class="section-container">
   <div class="section-content-centered">
     <h2>Get Involved</h2>
