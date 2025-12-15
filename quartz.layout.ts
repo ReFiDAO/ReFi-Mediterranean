@@ -13,9 +13,10 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      "ReFi Mediterranean": "https://refidao.github.io/ReFi-Mediterranean",
       "ReFi DAO": "https://refidao.com",
+      "Twitter/X": "https://x.com/Refi_Med",
       "GitHub": "https://github.com/ReFiDAO/ReFi-Mediterranean",
+      "Telegram": "https://t.me/refimediterranean",
     },
   }),
 }
@@ -48,4 +49,5 @@ export const defaultListPageLayout: PageLayout = {
   left: [],
   right: [],
 }
+
 

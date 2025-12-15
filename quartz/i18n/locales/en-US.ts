@@ -65,11 +65,11 @@ export default {
     },
     navigation: {
       about: "About",
-      events: "Events",
-      regenerantCatalunya: "Regenerant Catalunya",
-      ecosystemMap: "Ecosystem Map",
+      vision: "Vision",
+      nodesAndPartners: "Nodes & Partners",
+      initiatives: "Initiatives",
+      getInvolved: "Get Involved",
       contact: "Contact",
-      blog: "Blog",
     },
   },
   pages: {

@@ -27,8 +27,8 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Inter",
-        body: "Inter",
+        header: "Merriweather",
+        body: "Source Serif Pro",
         code: "IBM Plex Mono",
       },
       colors: {
@@ -99,4 +99,5 @@ const config: QuartzConfig = {
 }
 
 export default config
+
 

@@ -27,8 +27,9 @@ const rootDir = join(__dirname, "..")
 // Format: { code: "locale-code", prefix: "url-prefix", isDefault: true/false }
 const LOCALES = [
   { code: "en-US", prefix: "en", isDefault: true },
-  { code: "es-ES", prefix: "es", isDefault: false },
-  { code: "it-IT", prefix: "it", isDefault: false },
+  // Add more locales as needed:
+  // { code: "ca-ES", prefix: "ca", isDefault: false },
+  // { code: "es-ES", prefix: "es", isDefault: false },
 ]
 
 function buildForLocale(locale, prefix, isDefault) {

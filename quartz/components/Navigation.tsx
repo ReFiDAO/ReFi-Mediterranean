@@ -5,16 +5,16 @@ import { FullSlug } from "../util/path"
 
 const LOCALE_PREFIXES: Record<string, string> = {
   "en-US": "en",
-  "ca-ES": "ca",
   "es-ES": "es",
+  "it-IT": "it",
 }
 
 function getCurrentLanguage(slug: FullSlug): string {
   const segments = slug.split("/").filter((s) => s.length > 0)
   const firstSegment = segments[0]
   
-  if (firstSegment === "ca") return "ca-ES"
   if (firstSegment === "es") return "es-ES"
+  if (firstSegment === "it") return "it-IT"
   if (firstSegment === "en") return "en-US"
   
   return "en-US"
@@ -34,14 +34,12 @@ function getLanguagePrefix(locale: string, slug: FullSlug): string {
   return `/${prefix}`
 }
 
-function getHomepageHashLink(langPrefix: string, hash: string): string {
-  // For hash links, we need to ensure they point to the homepage with the correct language prefix
+function getPageLink(langPrefix: string, pagePath: string): string {
+  // Build page links with language prefix
   if (langPrefix) {
-    // For /ca, /es, or /en, use /ca/#section, /es/#section, or /en/#section
-    return `${langPrefix}/#${hash}`
+    return `${langPrefix}/${pagePath}`
   } else {
-    // For English at root, use /#section
-    return `/#${hash}`
+    return `/${pagePath}`
   }
 }
 
@@ -64,11 +62,12 @@ export default (() => {
       <nav class={`navigation ${displayClass ?? ""}`} aria-label="Primary navigation">
         <div class="nav-shell">
           <ul id="nav-menu" class="nav-links">
-            <li><a href={getHomepageHashLink(langPrefix, "about")}>{navCopy.about}</a></li>
-            <li><a href={getHomepageHashLink(langPrefix, "events")}>{navCopy.events}</a></li>
-            <li><a href={getHomepageHashLink(langPrefix, "regenerant-catalunya")}>{navCopy.regenerantCatalunya}</a></li>
-            <li><a href={getHomepageHashLink(langPrefix, "ecosystem-map")}>{navCopy.ecosystemMap}</a></li>
-            <li><a href={getHomepageHashLink(langPrefix, "contact")}>{navCopy.contact}</a></li>
+            <li><a href={getPageLink(langPrefix, "about")}>{navCopy.about}</a></li>
+            <li><a href={getPageLink(langPrefix, "vision")}>{navCopy.vision}</a></li>
+            <li><a href={getPageLink(langPrefix, "nodes-and-partners")}>{navCopy.nodesAndPartners}</a></li>
+            <li><a href={getPageLink(langPrefix, "initiatives")}>{navCopy.initiatives}</a></li>
+            <li><a href={getPageLink(langPrefix, "get-involved")}>{navCopy.getInvolved}</a></li>
+            <li><a href={getPageLink(langPrefix, "contact")}>{navCopy.contact}</a></li>
           </ul>
           <button
             class="nav-toggle action-button"

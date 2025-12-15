@@ -51,7 +51,7 @@ What is the name of your node/organization?
 
 *Example: "ReFi Barcelona", "ReFi Provence", "ReFi Mediterranean"*
 ```
-Your answer: _______________
+Your answer: ReFi Mediterranean
 ```
 
 ### 1.2 Tagline (Optional)
@@ -60,7 +60,7 @@ A short phrase that appears after your site name in browser tabs and search resu
 *Example: "A network society to regenerate the earth"*
 *Example: "Regenerative Finance for the Mediterranean"*
 ```
-Your answer: _______________
+Your answer: Regenerative Finance for the Mediterranean
 ```
 
 ### 1.3 Domain
@@ -77,7 +77,7 @@ What domain will your website use?
 ```
 Your choice for launch:
 [ ] A) GitHub Pages — Start here, upgrade later
-[ ] B) Subdomain of ReFi DAO
+[x] B) Subdomain of ReFi DAO
 [ ] C) Custom domain (I already have one): _______________
 
 ```
@@ -87,7 +87,7 @@ Primary contact email for the website.
 
 *Example: contact@refiprovence.org, hello@refibcn.cat*
 ```
-Your answer: _______________
+Your answer: TODO: choose primary contact email (e.g., hello@refimed.org / refimed@refidao.com / contact@refimed.xyz)
 ```
 
 ### 1.5 GitHub Repository
@@ -96,9 +96,9 @@ Where is your website repository hosted?
 > **Note**: You should fill this questionnaire **after forking the template**. If you haven't forked yet, do that first: [Fork the template](https://github.com/ReFiDAO/quartz-refi-template) → **Fork** → Create repository.
 
 ```
-Organization: _______________ (e.g., "ReFiDAO", "refibcn")
-Repository name: _______________ (e.g., "refi-provence-website")
-Repository URL: https://github.com/_______________/_______________
+Organization: ReFiDAO (e.g., "ReFiDAO", "refibcn")
+Repository name: ReFi-Mediterranean (e.g., "refi-provence-website")
+Repository URL: TODO: add actual repo URL once forked (e.g., https://github.com/ReFiDAO/refi-mediterranean)
 ```
 
 ---
@@ -111,18 +111,18 @@ Please gather the following assets and upload them to the `assets/` folder in yo
 
 | Asset | Status | Filename |
 |-------|--------|----------|
-| Logo (header) | [ ] Ready  [ ] In progress  [ ] Need help | |
-| Favicon | [ ] Ready  [ ] In progress  [ ] Need help | |
-| Hero image | [ ] Ready  [ ] In progress  [ ] Need help | |
+| Logo (header) | [x] Ready  [ ] In progress  [ ] Need help | `Node Logo Olive Gold 2.jpg` (alt: `Node Logo Ocean.png`, `Node Logo Stone Cirlce.png`) |
+| Favicon | [ ] Ready  [x] In progress  [ ] Need help | TODO: generate `favicon.png` (32x32/64x64) derived from the circular logo mark |
+| Hero image | [x] Ready  [ ] In progress  [ ] Need help | `Social Media Banner Olive Gold.jpg` (alt: `Social Media Banner Ocean.jpg`, `Social Media Banner Stone Circle.jpg`) |
 
 ### Recommended Assets
 
 | Asset | Status | Notes |
 |-------|--------|-------|
-| Team photos | [ ] Ready  [ ] In progress  [ ] N/A | One per team member |
-| Partner logos | [ ] Ready  [ ] In progress  [ ] N/A | PNG with transparent bg |
-| Event photos | [ ] Ready  [ ] In progress  [ ] N/A | For past events section |
-| Project images | [ ] Ready  [ ] In progress  [ ] N/A | For project showcases |
+| Team photos | [ ] Ready  [x] In progress  [ ] N/A | TODO: 1:1 headshots for core team (min 400x400px) |
+| Partner logos | [ ] Ready  [x] In progress  [ ] N/A | TODO: matching pool donors + partners (PNG with transparent bg) |
+| Event photos | [ ] Ready  [x] In progress  [ ] N/A | Use existing social assets for now; TODO add real event photos |
+| Project images | [ ] Ready  [x] In progress  [ ] N/A | Use GG23 round graphics for now; TODO add initiatives/projects imagery |
 
 ### Image Guidelines
 
@@ -152,7 +152,7 @@ Choose a color scheme that reflects your node's identity. You can either:
 | **Sunset** | Coral (#E67E50) | Energetic, warm, welcoming | Community/social focus |
 
 ```
-Your choice: [ ] Ocean Blue  [ ] Forest Green  [ ] Mediterranean  [ ] Earth Tones  [ ] Sunset  [ ] Custom (see Option B)
+Your choice: [ ] Ocean Blue  [ ] Forest Green  [x] Mediterranean  [ ] Earth Tones  [ ] Sunset  [ ] Custom (see Option B)
 ```
 
 #### Option B: Custom Colors
@@ -179,7 +179,7 @@ What feeling should your typography convey?
 | **Bold & Expressive** | Outfit, Sora | Creative/activist nodes |
 
 ```
-Your preference: [ ] Modern  [ ] Classic  [ ] Friendly  [ ] Bold  [ ] No preference (use default)
+Your preference: [ ] Modern  [x] Classic  [ ] Friendly  [ ] Bold  [ ] No preference (use default)
 ```
 
 ### 3.3 Logo & Favicon
@@ -193,8 +193,8 @@ Please provide:
 | Logo (dark mode) | PNG or SVG | Same as header logo | Optional |
 
 ```
-Do you have a logo ready? [ ] Yes  [ ] No, need help creating one
-File location/link: _______________
+Do you have a logo ready? [x] Yes  [ ] No, need help creating one
+File location/link: `03 Libraries/ReFi-Mediterranean/assets/Node Logo Olive Gold 2.jpg` (alts: `Node Logo Ocean.png`, `Node Logo Stone Cirlce.png`)
 ```
 
 ---
@@ -207,11 +207,12 @@ What pages should appear in your main navigation menu? List them in order.
 
 | # | Display Name | Link Type | Destination |
 |---|--------------|-----------|-------------|
-| 1 | | [ ] Internal page  [ ] External link | |
-| 2 | | [ ] Internal page  [ ] External link | |
-| 3 | | [ ] Internal page  [ ] External link | |
-| 4 | | [ ] Internal page  [ ] External link | |
-| 5 | | [ ] Internal page  [ ] External link | |
+| 1 | About | [x] Internal page  [ ] External link | `/about` |
+| 2 | Vision | [x] Internal page  [ ] External link | `/vision` |
+| 3 | Nodes & Partners | [x] Internal page  [ ] External link | `/nodes-and-partners` |
+| 4 | Initiatives | [x] Internal page  [ ] External link | `/initiatives` |
+| 5 | Get involved | [x] Internal page  [ ] External link | `/get-involved` |
+| 6 | Contact | [x] Internal page  [ ] External link | `/contact` |
 
 **Examples from existing nodes:**
 
@@ -233,18 +234,22 @@ What links should appear in the footer?
 
 *Example: "GitHub", "Twitter/X", "Discord", "ReFi DAO"*
 ```
-Your links: _______________
+Your links:
+- ReFi DAO → https://refidao.com
+- Twitter/X → https://x.com/Refi_Med
+- GitHub → TODO: add repo URL
+- Telegram → TODO: add public group link (or keep private and use “DM us”)
 ```
 
 ### 4.3 Social Media Links
 
 | Platform | URL |
 |----------|-----|
-| Twitter/X | |
-| Discord | |
-| Telegram | |
+| Twitter/X | https://x.com/Refi_Med |
+| Discord | TODO |
+| Telegram | TODO (contacts mentioned in GG23 doc: @regenavocado, @louizfe) |
 | LinkedIn | |
-| GitHub | |
+| GitHub | TODO |
 | Other | |
 
 ---
@@ -255,16 +260,18 @@ Your links: _______________
 
 Which sections would you like on your homepage? Check all that apply:
 
-| Section | Description | Include? |
-|---------|-------------|----------|
-| **Hero** | Large banner with title, tagline, and CTA | [ ] Yes |
-| **What We Do** | Grid of activities/services | [ ] Yes |
-| **Featured Project** | Highlight a key initiative | [ ] Yes |
-| **Past Events** | Showcase previous activities | [ ] Yes |
-| **Team/About Us** | Introduce your core team | [ ] Yes |
-| **Partners** | Display partner/sponsor logos | [ ] Yes |
-| **Get Involved** | Call to action for participation | [ ] Yes |
-| **What is ReFi?** | Educational section about ReFi | [ ] Yes |
+| Section | Description | Include? | Link/Page |
+|---------|-------------|----------|----------|
+| **Hero** | Large banner with title, tagline, and CTA | [x] Yes | `/` |
+| **What We Do** | Grid of activities/services | [x] Yes | `/about` |
+| **Featured Project** | Highlight a key initiative | [x] Yes | `/initiatives` |
+| **Past Events** | Showcase previous activities | [x] Yes | `/events` |
+| **Team/About Us** | Introduce your core team | [x] Yes | `/about` |
+| **Partners** | Display partner/sponsor logos | [x] Yes | `/nodes-and-partners` |
+| **Get Involved** | Call to action for participation | [x] Yes | `/get-involved` |
+| **What is ReFi?** | Educational section about ReFi | [x] Yes | `/resources` |
+| **Member Organizations** | Member organizations: logos + links + short descriptions | [x] Yes | `/nodes-and-partners` |
+| **Initiatives** | Past and current initiatives (cards/timeline) | [x] Yes | `/initiatives` |
 
 ### 5.2 Additional Pages
 
@@ -272,14 +279,14 @@ What other pages do you need beyond the homepage?
 
 | Page | Purpose | Priority |
 |------|---------|----------|
-| About | | [ ] High  [ ] Medium  [ ] Low |
-| Team | | [ ] High  [ ] Medium  [ ] Low |
-| Projects | | [ ] High  [ ] Medium  [ ] Low |
-| Events | | [ ] High  [ ] Medium  [ ] Low |
-| Resources | | [ ] High  [ ] Medium  [ ] Low |
-| Blog | | [ ] High  [ ] Medium  [ ] Low |
-| Contact | | [ ] High  [ ] Medium  [ ] Low |
-| Other: _______ | | [ ] High  [ ] Medium  [ ] Low |
+| About | What ReFi Mediterranean is; bioregional framing; who we are;how we work | [x] High  [ ] Medium  [ ] Low |
+| Vision | What we want to achieve; our values; our mission | [x] High  [ ] Medium  [ ] Low |
+| Nodes & Partners | List of member organizations; their logos; their short descriptions | [x] High  [ ] Medium  [ ] Low |
+| Events | List of past and current events; their logos; their short descriptions | [x] High  [ ] Medium  [ ] Low |
+| Resources | Shared library of resources (curated + reusable across the network): docs, guides, toolkits, references, media; ideally tagged/categorized and linkable | [x] High  [ ] Medium  [ ] Low |
+| Initiatives | List of past and current initiatives; their logos; their short descriptions | [x] High  [ ] Medium  [ ] Low |
+| Get involved | Call to action for participation | [x] High  [ ] Medium  [ ] Low |
+| Contact | Contact form; contact information; social media links | [x] High  [ ] Medium  [ ] Low |
 
 ### 5.3 Multi-Language Support
 
@@ -287,11 +294,11 @@ Does your website need multiple languages?
 
 ```
 [ ] No, single language only
-[ ] Yes, multiple languages
+[x] Yes, multiple languages
 
-If yes, which languages?: _______________
+If yes, which languages?: English (EN), Spanish (ES), Italian (IT)
 
-Default language: _______________
+Default language: English (EN)
 ```
 
 ---
@@ -304,7 +311,7 @@ Default language: _______________
 
 *Example: "Seeding pathways toward just and resilient economies"*
 ```
-Your title: _______________
+Your title: A bioregional node for holistic regeneration
 ```
 
 **Description** (2-3 sentences about your node):
@@ -313,40 +320,40 @@ Your title: _______________
 ```
 
 Your description:
-_______________
-_______________
-_______________
+ReFi Mediterranean is a bioregional coordination node advancing regenerative finance across the Mediterranean.
+We connect local regenerators and Web3 public goods communities, and we experiment with impact-driven funding (ImpactQF / Tunable Quadratic Funding) to support real-world ecological, social, and economic impact.
+We prioritize transparency and accountability via standardized impact reporting (e.g., Karma GAP activities & outputs).
 ```
 
 **Call-to-Action Button**:
 ```
-Button text: _______________ (e.g., "Learn More", "Get Involved", "Join Us")
-Button link: _______________ (e.g., "#about", "/contact")
+Button text: Get involved
+Button link: /#get-involved
 ```
 
 ### 6.2 What We Do
 
 List 3-6 key activities your node focuses on:
-
+```
 | Activity | Icon | Short Description |
 |----------|------|-------------------|
-| 1. | | |
-| 2. | | |
-| 3. | | |
-| 4. | | |
-| 5. | | |
-| 6. | | |
-
+| 1. Funding rounds | 💸 | Run bioregional funding rounds that reward demonstrated impact (not just proposals). |
+| 2. Impact reporting & evaluation | 📊 | Support projects to report activities/outputs and strengthen verification using tools like Karma GAP. |
+| 3. Bioregional ecosystem building | 🤝 | Convene local nodes, land-based projects, and partner networks across the Mediterranean. |
+| 4. ReFi tools onboarding | 🧰 | Help local regenerators integrate Web3 / ReFi tools where it supports their mission. |
+| 5. Public goods partnerships | 🧩 | Collaborate with aligned networks and matching partners to grow shared capacity. |
+| 6. Storytelling & communications | 📣 | Communicate learnings, opportunities, and impact to donors and communities. |
+```
 > **Icon suggestions**: Use emoji or describe what icon you'd like (e.g., "money/funding", "people/community", "plant/nature")
 
 ### 6.3 Team Members
 
 | Name | Role | Bio (2-3 sentences) | Photo? | LinkedIn/Twitter |
 |------|------|---------------------|--------|------------------|
-| | | | [ ] Yes | |
-| | | | [ ] Yes | |
-| | | | [ ] Yes | |
-| | | | [ ] Yes | |
+| Regen Avocado | Round Operator; Steward | Founder Rifai Sicilia, member ReFi Italia, steward ReFi Mediterranean, contributor to Community Success at Karma. Leads bioregional grantmaking experiments for regenerative impact. | [ ] Yes | https://x.com/regenavocado |
+| Luiz Fernando | Round Operator; Ops Lead | Founder & lead of ReFi Barcelona; core steward & operations lead at ReFi DAO. Supports coordination, operations, and scaling local nodes and funding mechanisms. | [ ] Yes | https://x.com/louizfe |
+| TODO | Steward / Contributor | TODO: add additional core stewards, advisors, and collaborators. | [ ] Yes | TODO |
+| TODO | Steward / Contributor | TODO: add additional core stewards, advisors, and collaborators. | [ ] Yes | TODO |
 
 ---
 
@@ -359,10 +366,12 @@ Use this section to share any additional context that will help guide the websit
 What do you want visitors to feel or understand when they land on your website?
 
 ```
+We want visitors to quickly understand that ReFi Mediterranean is a bioregional coordination node supporting real-world regeneration.
+The site should feel grounded, warm, and Mediterranean—while still rigorous and trustworthy in how we talk about funding, evaluation, and impact.
+Visitors should leave knowing what we do, how to participate (as projects/donors/partners), and where to find current opportunities (rounds/events).
 
-
-
-
+The site should help (re)activate conversations about what ReFi Mediterranean is and what we could become—our online presence will shape our identity.
+Visitors should quickly see: what we are, who the member organizations are, what initiatives exist (past/current), and how to engage.
 ```
 
 ### 7.2 Key Goals
@@ -370,10 +379,13 @@ What do you want visitors to feel or understand when they land on your website?
 What are the main goals for this website? (e.g., attract partners, onboard community members, showcase projects, raise awareness)
 
 ```
-
-
-
-
+- Create a lightweight public “front door” for ReFi Mediterranean.
+- Make member organizations visible (logo + link to their website + short descriptions).
+- Present initiatives clearly (past/current), starting with:
+  - GG23 / ImpactQF (past initiative / mechanism experimentation)
+  - Bioregional reforestation round (current initiative placeholder from Silvi – we are one of the bioregional partners)
+- Use the website to catalyze internal alignment: what services/capabilities do we offer as a network?
+- Provide simple CTAs: follow, contact, partner, join.
 ```
 
 ### 7.3 Inspirations & References
@@ -381,10 +393,14 @@ What are the main goals for this website? (e.g., attract partners, onboard commu
 Are there any websites, designs, or aesthetics you'd like us to draw inspiration from?
 
 ```
+Brand references (already available in `assets/`):
+- Olive-gold circular motif + serif wordmark (“ReFi Mediterranean”): `Node Logo Olive Gold 2.jpg`, `Social Media Banner Olive Gold.jpg`
+- Ocean variant: `Node Logo Ocean.png`, `Social Media Banner Ocean.jpg`
+- Stone circle variant: `Node Logo Stone Cirlce.png`, `Social Media Banner Stone Circle.jpg`
 
-
-
-
+Website references:
+- ReFi DAO: https://refidao.com
+- ReFi Barcelona: https://refibcn.cat
 ```
 
 ### 7.4 Specific Requirements or Requests
@@ -393,9 +409,6 @@ Any particular features, sections, or functionality you need that weren't covere
 
 ```
 
-
-
-
 ```
 
 ### 7.5 Things to Avoid
@@ -403,10 +416,9 @@ Any particular features, sections, or functionality you need that weren't covere
 Anything you specifically don't want on the website?
 
 ```
-
-
-
-
+- Avoid overly corporate / sterile visuals; keep it bioregional, warm, and human.
+- Avoid walls of text: prefer scannable sections, clear CTAs, and concise explainers.
+- Avoid over-promising: claims should link back to reports / evaluation artifacts where possible.
 ```
 
 ### 7.6 Timeline & Priorities
@@ -414,10 +426,11 @@ Anything you specifically don't want on the website?
 When do you need the website ready? Any key dates or events driving the timeline?
 
 ```
+TODO: website launch target date.
 
-
-
-
+Reference timeline (GG23 round dates, for archival page):
+- Donation dates: April 2 @ noon UTC → April 16 @ 23:59 UTC
+- Results announced: April 23
 ```
 
 ---
