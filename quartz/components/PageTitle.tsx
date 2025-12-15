@@ -1,6 +1,6 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
-import { FullSlug } from "../util/path"
+import { FullSlug, joinSegments, pathToRoot } from "../util/path"
 
 const LOCALE_PREFIXES: Record<string, string> = {
   "en-US": "en",
@@ -49,10 +49,14 @@ const PageTitle: QuartzComponent = ({ cfg, displayClass, fileData }: QuartzCompo
   // Ensure home link has trailing slash for language prefixes
   const homeLink = langPrefix ? `${langPrefix}/` : "/"
   
+  // Calculate relative path to static assets for GitHub Pages compatibility
+  const baseDir = pathToRoot(currentSlug)
+  const logoPath = joinSegments(baseDir, "static/node-logo-ocean.png")
+  
   return (
     <h2 class={classNames(displayClass, "page-title")}>
       <a href={homeLink}>
-        <img src="/static/node-logo-ocean.png" alt="ReFi Mediterranean Logo" class="page-title-logo" />
+        <img src={logoPath} alt="ReFi Mediterranean Logo" class="page-title-logo" />
         <span>{title}</span>
       </a>
     </h2>

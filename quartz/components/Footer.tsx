@@ -2,19 +2,24 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import style from "./styles/footer.scss"
 import { version } from "../../package.json"
 import { i18n } from "../i18n"
+import { joinSegments, pathToRoot } from "../util/path"
 
 interface Options {
   links: Record<string, string>
 }
 
 export default ((opts?: Options) => {
-  const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
+  const Footer: QuartzComponent = ({ displayClass, cfg, fileData }: QuartzComponentProps) => {
     const year = new Date().getFullYear()
     const links = opts?.links ?? []
+    // Calculate relative path to static assets for GitHub Pages compatibility
+    const currentSlug = fileData.slug || ("index" as any)
+    const baseDir = pathToRoot(currentSlug)
+    const logoPath = joinSegments(baseDir, "static/node-logo-ocean.png")
     return (
       <footer class={`${displayClass ?? ""}`}>
         <div class="footer-logo">
-          <img src="/static/node-logo-ocean.png" alt="ReFi Mediterranean" />
+          <img src={logoPath} alt="ReFi Mediterranean" />
         </div>
         <div class="footer-content">
           <div class="footer-links">
